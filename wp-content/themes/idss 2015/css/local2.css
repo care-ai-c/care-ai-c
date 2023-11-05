@@ -1,0 +1,172 @@
+/*
+ * More overrides and extra styles, added by rjw
+ *
+ */
+
+
+/*
+ * MOBILE MENU STYLES
+ *
+ * Originally, long menu items were cut off because the height was fixed at 40px,
+ * so wrapped text was cut off.
+ *
+ */
+
+#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a {
+  height: auto !important;
+  min-height: 40px;
+  line-height: 1.25 !important;
+  padding: 6px 12px 6px 10%  !important;
+}
+#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item:first-child a {
+  padding-top: 12px !important;
+}
+#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item:last-child a {
+  padding-bottom: 12px !important;
+}
+#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item li.responsive-menu-item a {
+  padding-left: 15% !important;
+}
+
+
+/*
+ * PARTNER LOGO STYLES
+ *
+ * Trying to make the partner logos on /engage/idss-strategic-partnerships look nicer. November 2020.
+ * The HTML is a container div with class partner-logos containing a number of figures.
+ * <div class="partner-logos">
+ *   <figure><a><img></a><figcaption>TEXT</figcaption></figure>
+ *   ...
+ * </div>
+ * We rely on the image being inside a link. A trick is used to keep the box containing the
+ * image at a constant aspect ratio (3:2).
+ * EDIT: Scott changed this to (2:3)(?) in Feb 2021. The key line is the padding-top of a::before.
+ * See https://mademyday.de/height-equals-width-with-pure-css/
+ */
+
+.partner-logos {
+  display: grid;
+  grid-gap: 40px 80px;
+  grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+}
+.partner-logos figure {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 0;
+}
+.partner-logos figure > a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.partner-logos figure > a::before {
+  content: "";
+  float: left;
+  padding-top: 33.33333%;
+}
+.partner-logos figure > a > img {
+  margin: 0;
+}
+.partner-logos figcaption {
+  display: block;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+
+/*
+ * PEOPLE LIST STYLES
+ * February 28 2022
+ * Changes to these templates, adding div.staff-groups:
+ *   page.php, page-administration.php, page-board.php, page-leadership.php
+ */
+@media screen and (min-width: 501px) {
+  .staff-groups {
+    /* background: #e0e0e0; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 36px 18px;
+  }
+  .people-additional-note {
+    margin: 0 0 1em 0;
+  }
+  h3.staff-category-header {
+    float: none;
+    margin: 0 0 10px 0;
+  }
+  .staff-groups .staff-group {
+    width: auto;
+    max-width: 230px;
+    margin: 0;
+    min-height: 0;
+  }
+  .staff-groups .imager {
+    height: auto;
+    line-height: 0;
+  }
+  .staff-groups .imager img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+  }
+  .staff-groups h3 {
+    height: auto;
+    min-height: 60px;
+  }
+  .staff-groups .title {
+    height: auto;
+  }
+  .staff-groups + :is(h2,h3) {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 1255px) {
+  .staff-groups {
+    grid-template-columns: repeat(4,1fr)
+  }
+}
+@media screen and (max-width: 850px) {
+  .staff-groups {
+    grid-template-columns: repeat(3,1fr)
+  }
+}
+@media screen and (max-width: 650px) {
+  .staff-groups {
+    grid-template-columns: repeat(2,1fr)
+  }
+}
+@media screen and (max-width: 500px) { /* no changes to original styles */
+  .staff-groups {
+    display: block;
+  }
+  .staff-groups .imager img {
+    object-fit: cover;
+    min-height: 0;
+  }
+}
+
+/*** pronouns 8/2022 ***/
+
+/* in people listings */
+.staff-group h3 .pronouns,
+.staff-group h3 a .pronouns {
+  font-size: 12px;
+  font-style: italic;
+  text-transform: lowercase;
+}
+/* in person page title */
+h1 .pronouns {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/*** more news on home page 1/2023 ***/
+
+.idss-news-more a {
+	color: inherit;
+	text-decoration: none;
+}
+

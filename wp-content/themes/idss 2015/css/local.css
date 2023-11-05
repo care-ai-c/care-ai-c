@@ -1,0 +1,301 @@
+/*
+ * this should override Opus's styles
+ * --bj 3/1/2016
+ */
+
+.sidebar-right .heading {
+    background-color: #acc936;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5% 8%;
+}
+
+.sidebar-right .text {
+    background-color: #ebebeb;
+    padding: 5% 8%;
+    margin-bottom: 5%;
+}
+
+.sidebar-box {
+    background-color: #ebebeb;
+    padding: 3% 3% 0 3%;
+}
+
+.sidebar-box .talk-title {
+    font-weight: bold;
+    font-size: 110%;
+    //padding-bottom: 3%;
+}
+
+.sidebar-box .talk-title a {
+    text-decoration: none;
+    color: #404041;
+}
+
+.sidebar-box .talk-title a:hover {
+    color: #838384;
+    text-decoration: underline;
+}
+
+.sidebar-box .speaker-name {
+    font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    color: #404041;
+}
+
+.sidebar-box .meta {
+    font-size: 1em;
+    padding-bottom: 2%;
+}
+
+.sidebar-box>p {
+    padding-bottom: 8%;
+    padding-left: 5%;
+}
+
+.alumni-page .meta {
+    font-size: 1em;
+    padding-bottom: 2%;
+}
+
+.sidebar-right {
+    margin-top: 0;
+}
+
+.sidebar-right > .give-button {
+    padding: 5% 8%;
+    background: #a31f34;
+    margin: 4% 0;
+}
+
+.sidebar-right .give-button a {
+    display: block;
+    /*background: #ebebeb; */
+    background: #a31f34;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    /*color: #000; */
+    color: #fff;
+    /*
+    padding: .5em 1em;
+    margin-bottom: 1em;
+    */
+}
+
+.sidebar-right ul {
+    padding: 0;
+}
+
+.sidebar-right ul li {
+    list-style-type: none;
+}
+
+.sidebar-right ul li a {
+    background-color: #ebebeb;
+    font-size: 18px;
+    color: #404041;
+    padding: 5% 8%;
+    margin: 4% 0;
+    display: block;
+}
+
+.sidebar-right ul li a:hover {
+    background-color:#acc936;
+    color:#fff;
+}
+
+.sidebar-right .copy {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.sidebar-right .heading a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.alumni-page .news-text h3 a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-box .news-group {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.sidebar-box .news-text a {
+    text-decoration: none;
+    color: #404041;
+    font-weight: bold;
+    font-size: 110%;
+    vertical-align: top;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.sidebar-box .news-text p {
+    font-size: .8em;
+    margin-top: 0;
+}
+
+.sidebar-box .meta {
+    padding-top: 3%;
+}
+
+.sidebar-box .news-text a:hover {
+    text-decoration: underline;
+}
+.alumni-page .news-group {
+    padding-bottom: 1%;
+}
+
+.subs li.no-hover a:hover {
+    background-color: #ebebeb;
+    color: #404041;
+}
+
+.sidebar .subs li.text-item {
+    padding-left: 2%;
+    //padding-right: 2%;
+}
+
+/*
+ * Styles for promo section of front page
+ * that will link to a live stream of the
+ * IDSS launch event.
+ */
+.promo-block .pad p.launch-notice {
+    font-size: 18px;
+}
+
+.promo-block a.btn {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+a.btn {
+    background-color: #acc936;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    //text-shadow: 1px 1px 1px #000;
+    text-shadow: -1px 1px #afcc37;
+    box-shadow: 3px 3px 5px 1px #ccc;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+a.btn:hover {
+    background-color: #009ede;
+    text-shadow: -1px 1px #0091cc;
+}
+
+a.btn:active {
+    //text-decoration: underline;
+    background-color: #26667f;
+    text-shadow: -1px 1px #222;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+a.btn:visited {
+    color #fff;
+}
+
+/*
+ *  this was set to display: none
+ *  initially by Opus in the main
+ *  style.css file.
+ */
+.type-page .title_block {
+    display: flex;
+    justify-content: space-between;
+//    border-bottom: 1px solid black;
+}
+
+.type-page .title_block h1,
+.type-page .title_block h2 {
+    border-bottom: none;
+    padding-bottom: 20px;
+}
+
+.type-page select {
+    display: inline-block;
+    position: relative;
+}
+
+.staff-group .domain {
+    display: inline-block;
+}
+
+.single-news .single-imager {
+    /* max-width: none; */
+    max-width: 100%;
+    width: 36%;
+    max-height: none;
+}
+
+.single-news .single-imager img {
+    width: 100%;
+}
+
+.people-additional-note {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin: 0 1%;
+}
+
+/*
+ * Styles for the News section of the frontpage
+ *
+ * Some rectangular images are getting cropped
+ * too aggressively. --bj 2/2/2018
+ */
+.idss-news-article .idss-news-copy {
+  width: 70%;
+}
+
+.idss-news-article .idss-news-imager {
+  width: 25%;
+}
+
+/*
+ * Styles for Upcoming and News on front page
+ */
+.row-news-upcoming h2>a {
+    text-decoration: none;
+    color: #404040;
+}
+
+/*
+ * hide select box for idss_person_domain on people pages
+ * --bj 11/30/2018
+ */
+.people_select {
+    //display: none;
+}
+
+.page-template-page-directory select.domain_select {
+    display: none;
+}
+
+.page-template-page-directory select.position_select {
+    display: none;
+}
+
+.page-template-page-directory .form-block input[type=submit] {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
